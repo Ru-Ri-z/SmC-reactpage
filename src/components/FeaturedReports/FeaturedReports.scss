@@ -1,0 +1,159 @@
+.app__featured-reports-container {
+    width: 100%;
+    height: 100%;
+    background-color:var(--lightgray-color);
+    display: flex;
+    flex-direction: column;
+    background-image: url('../../assets/wave-green.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (min-width: 1024px) {
+        background-size: 100% 100%;
+    }
+
+    .app__highlighted-reports-title {
+        width: 80%;
+        margin: auto;
+        margin-top: 7rem;
+
+        h2 {
+            font-size: 2rem;
+            color: var(--darkgreen-color);
+            font-family: var(--font-base);
+            margin-bottom: 30px;
+            text-align: left;
+            opacity: 0;
+            
+            span {
+                display: block;
+                margin-top: -10px;
+                color: var(--purple-color);
+
+                @media screen and (min-width: 1024px) {
+                    margin-top: -20px;
+                }
+            }
+
+            @media screen and (min-width: 1024px) {
+                font-size: 4rem;
+            }
+        }
+    }
+
+    .app__slider-container-reports {
+        width: 100%;
+        margin-bottom: 27rem;
+        display: flex;
+        justify-content: center;
+
+        .app__highlighted-reports-slider {
+            width: 80%;
+            display: grid;
+            grid-template-columns: 100%;
+
+            @media screen and (min-width: 1024px) {
+                grid-template-columns: 39% 61%;
+            }
+
+            .app__highlighted-reports-slider-frame {
+                display: flex;
+                align-items: flex-start;
+                padding-left: 5px;
+            }
+
+            .app__highlighted-reports-slider-paragraphs {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-top: 40px;
+                opacity: 0;
+                @media screen and (min-width: 1024px) {
+                    padding-top: 0;
+                }
+
+                h3 {
+                    color: var(--purple-color);
+                    text-align: left;
+                    font-family: var(--font-base);
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    padding-bottom: 20px;
+
+                    @media screen and (min-width: 1024px) {
+                        font-size: 2rem;
+                    }
+                }
+
+                p {
+                    padding-right: 20px;
+                    text-align: left;
+                    font-family: var(--font-base);
+                    margin-bottom: 15px;
+                    font-size: .8rem;
+                    color: var(--white-color);
+
+                    @media screen and (min-width: 1024px) {
+                        font-size: 1rem;
+                    }
+                }
+
+                div {
+                    padding-top: 20px;
+                    display: inline-flex;
+                    flex-direction: column;
+                    padding-bottom: 20px;
+                    a {
+                        background-color: transparent;
+                        color: var(--purple-color);
+                        font-size: .8rem;
+                        text-decoration: none;
+                        text-align: left;
+                        font-family: var(--font-base);
+                        padding: 0;
+                        border-width: 0em;
+
+                        @media screen and (min-width: 768px) {
+                            font-size: 1rem;
+                            text-align: left;
+                        }
+                    }
+                }
+                
+                .button-more-reports {
+                    width: fit-content;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-around;
+
+                    img {
+                        cursor: pointer;
+                    }
+
+                    div {
+                        background-color: #413D75;
+                        border-radius: 50%;
+                        width: 2.5rem;
+                        height: 2.5rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        .link {
+                            padding-bottom: 4.5px;
+                            text-decoration: none;
+                            color: var(--white-color);
+                            font-size: 2rem;
+                            font-family: var(--font-base);
+                            font-weight: 600;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+

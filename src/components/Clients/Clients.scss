@@ -1,0 +1,39 @@
+.clients-container{
+    width: 100%;
+    background-color: var(--lightgray-color);
+    padding-bottom: 40px;
+    @media screen and (min-width: 1024px){
+        padding-bottom: unset;
+    }
+    h2 {
+        width: 80%;
+        margin: 0 auto;
+        font-size: 2rem;
+        color: var(--blue-color);
+        font-family: var(--font-base);
+        text-align: left;
+        opacity: 0;
+        span {
+            display: block;
+            margin-top: -10px;
+            color: var(--purple-color);
+            @media screen and (min-width: 1024px){
+                margin-top: -20px;
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            font-size: 4rem;
+        }
+    }
+    .clients-container-image{
+        width: 100%;
+        margin: auto;
+        @media screen and (min-width: 1024px){
+            width: 80%;
+        }
+        img{
+            width: 100%;
+        }
+    }
+}

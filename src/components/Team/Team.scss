@@ -1,0 +1,162 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.app__team-container {
+    width: 100%;
+    min-height: 90vh;
+    background-color: var(--lightgray-color);
+    overflow-x: hidden;
+
+    .app__team-title-container {
+        width: 100vw;
+        height: 100vh;
+        background-image: url('../../assets/our-team-background.png');
+        background-size: cover;
+        background-position: center;
+        display: flex;        
+        align-items: center;
+        justify-content: center;
+        overflow-x: hidden;
+
+        h2 {
+            font-size: 6rem;
+            color: var(--white-color);
+            font-family: var(--font-base);
+            text-align: left;
+            width: 80%;
+
+            span {
+                display: block;
+                color: var(--white-color);
+                margin-top: -30px
+            }
+        }
+    }
+
+    .app__team-slider-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        overflow-x:hidden;
+
+        @media screen and (min-width: 1200px) {
+            flex-wrap: nowrap;
+            display: grid;
+            justify-content: center;
+            grid-template-columns: auto auto;
+        }
+
+        .app__team-slider-card {
+            display: flex;
+            flex-direction: column;
+            justify-self: center;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--lightgray-color);
+            border-radius: 10px;
+            overflow-x:hidden;
+
+            .app__team-slider-card-img {
+                display: flex;
+                justify-content: center;
+
+                img {
+                    width: 70%;
+                    object-fit: center;
+                }
+            }
+
+            .app__team-slider-card-data {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                display: flex;
+                flex-direction: column;
+
+                .app__team-slider-card-data-status-container {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    min-height: 40px;
+                    margin-bottom: 10px;
+
+
+                }
+
+                .app__team-slider-card-data-title {
+                    text-align: center;
+                    color: var(--purple-color);
+                    font-family: var(--font-base);
+                    font-weight: 600;
+                    font-size: 1.5rem;
+                    padding-bottom: 20px;
+                }
+
+
+                .app__team-slider-card-data-desc {
+                    text-align: left;
+                    color: var(--gray-color);
+                    font-family: var(--font-base);
+                    font-size: 1rem;
+                    line-height: 1.3rem;
+                    width: 92%;
+                    margin: auto;
+                    visibility: hidden;
+                    opacity: 0;
+                    word-spacing: -1px;
+                }
+
+                .show-slider-desc {
+                    visibility: visible;
+                    opacity: 1;
+                    transition: all .2s ease-in-out;
+                }
+            }
+        }
+    }
+
+    .arrow-container-right {
+        position: absolute;
+        top: 20%;
+        right: 1rem;
+        z-index: 9999;
+        cursor: pointer;
+    }
+
+    .arrow-container-left {
+        position: absolute;
+        top: 20%;
+        left: 1rem;
+        z-index: 9999;
+        cursor: pointer;
+    }
+}

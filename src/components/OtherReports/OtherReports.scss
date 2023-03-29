@@ -1,0 +1,181 @@
+.other-reports-title {
+    width: 80%;
+    margin: 0px auto;
+    padding-top: 80px;
+
+
+    h2 {
+        font-size: 3rem;
+        color: var(--blue-color);
+        font-family: var(--font-base);
+        margin-bottom: 30px;
+        text-align: left;
+
+        span {
+            display: block;
+            margin-top: -10px;
+            color: var(--purple-color);
+
+            @media screen and (min-width: 1024px) {
+                margin-top: -20px;
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            font-size: 4rem;
+        }
+    }
+
+
+}
+
+.other-reports-searcher {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 75%;
+    margin: auto;
+    border: 1px solid #adadad99;
+    padding-left: 10px;
+    padding-right: 10px;
+    .clean-search {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-family: var(--font-base);
+        color: var(--gray-color);
+        padding-left: 10px;
+        font-size: .8rem;
+    }
+
+    input {
+        width: 100%;
+        text-align: center;
+        height: 40px;
+        border: none;
+        font-family: var(--font-base);
+        font-size: 1rem;
+        outline: none;
+
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 50%;
+        
+    }
+
+    @media screen and (min-width: 1024px) {
+        width: 40%;
+        margin-top: 80px;
+        margin-bottom: 80px;
+
+        .clean-search {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            font-family: var(--font-base);
+            color: var(--gray-color);
+            padding-left: 10px;
+            font-size: 1rem;
+        }
+
+        input {
+            width: 100%;
+            text-align: center;
+            height: 40px;
+            border: none;
+            font-family: var(--font-base);
+            font-size: 1rem;
+            outline: none;
+
+        }
+    }
+}
+
+.other-reports-no-result {
+    text-align: center;
+    margin: 40px 0;
+    font-family: var(--font-base);
+    color: var(--gray-color);
+}
+
+.app__slider-container-reports {
+    width: 80%;
+    margin: 30px auto;
+
+    .app__highlighted-reports-slider {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        padding-top: 30px;
+
+
+        @media screen and (min-width: 1024px) {
+            grid-template-columns: 50% 50%;
+        }
+
+        .app__highlighted-reports-slider-frame {
+            display: flex;
+            align-items: flex-start;
+            padding-left: 5px;
+        }
+
+        .app__highlighted-reports-slider-paragraphs {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-top: 40px;
+
+            @media screen and (min-width: 1024px) {
+                padding-top: 0;
+            }
+            
+            img {
+                cursor: pointer;
+            }
+
+            h3 {
+                color: var(--purple-color);
+                text-align: left;
+                font-family: var(--font-base);
+                font-size: 1.5rem;
+                font-weight: 600;
+                padding-bottom: 20px;
+            }
+
+            h4 {
+                color: var(--blue-color);
+                text-align: left;
+                font-family: var(--font-base);
+                font-size: 1.2rem;
+                font-weight: 600;
+                padding-bottom: 20px;
+            }
+
+            p {
+                padding-right: 20px;
+                text-align: left;
+                font-family: var(--font-base);
+                margin-bottom: 15px;
+                font-size: 1rem;
+                color: var(--gray-color);
+            }
+
+            .button-reports {
+                    width: fit-content;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-around;
+
+                    img {
+                        cursor: pointer;
+                    }
+            }
+        }
+    }
+}
+
+.our-team {
+  background-color: var(--purple-color);
+}

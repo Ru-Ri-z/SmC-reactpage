@@ -1,0 +1,41 @@
+.recent-publication-container {
+    width: 100%;
+    background-color: var(--purple-color);
+    position: relative;
+    background-image: url("../../assets//recent-publications1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 40px;
+    .image-recent-pub {
+        width: 100%;
+        
+    }
+
+    .image-recent-pub-cross {
+        display: none;
+
+        @media screen and (min-width: 1024px) {
+            display: block;
+            position: absolute;
+            bottom: 3rem;
+            left: 25%;
+            width: 160px;
+            height: 160px;
+        }
+    }
+
+    .button {
+        position: absolute;
+        border: 2px solid var(--darkgreen-color);
+        background-color: transparent;
+        border-radius: 30px;
+        padding: 10px 20px;
+        color: var(--darkgreen-color);
+        font-size: 1rem;
+        font-family: var(--font-base);
+        left: 10%;
+        top: 85%;
+        z-index: 9999;
+    }
+}

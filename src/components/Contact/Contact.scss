@@ -1,0 +1,181 @@
+.app__contact-container {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    background-color: var(--lightgray-color);
+    background-image: url("../../assets/contactimg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+
+    @media screen and (min-width: 1024px) {
+        min-height: 100vh;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .app__contact-text-container {
+      width: 20rem;
+      display: flex;
+      justify-content: space-around;
+      align-self: flex-start;
+      margin-top: 20vh;
+      margin-bottom: 5vh;
+      margin-left: 5vw;
+
+      @media screen and (min-width: 1024px) {
+        height: 8rem;
+      }
+
+      @media screen and (min-width: 1150px) {
+        width: 22rem;
+      }
+
+      @media screen and (min-width: 1323px) {
+        width: 23rem;
+      }
+
+
+    .app__contact-faro {
+      background-image: url('../../assets/faro-contact.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 50%;
+      display: flex;
+
+      @media screen and (min-width: 1024px) {
+        width: 12vw; 
+      }
+
+      @media screen and (min-width: 1323px) {
+        width: 11vw; 
+      }
+
+      @media screen and (min-width: 1400px) {
+        width: 9vw;
+      }
+
+      @media screen and (min-width: 1763px) {
+        width: 8vw;
+      }
+
+      @media screen and (min-width: 1920px) {
+        width: 7vw;
+      }
+
+      @media screen and (min-width: 2200px) {
+        width: 6vw;
+      }
+
+    }
+
+    .app__contact-faro-title {  
+      font-size: 1.3rem;
+      color: var(--white-color);
+      font-family: var(--font-base);
+      width: 62%;
+      align-self: left;
+    }
+  }
+
+    h2 {
+      font-size: 1.3rem;
+      color: var(--white-color);
+      font-family: var(--font-base);
+    
+      @media screen and (min-width: 768px){
+        font-size: 1.3rem;
+      }
+    }
+
+    .app__contact-container-data {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: center;
+
+        @media screen and (min-width: 1024px) {
+          width: 50vw;
+        }
+
+        .app__contact-container-form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            @media screen and (min-width: 768px){
+                width: 90%;
+                align-self: flex-start;
+            }
+
+            h2 {
+                font-size: 2rem;
+                color: var(--darkgreen-color);
+                font-family: var(--font-base);
+                margin-bottom: 30px;
+                opacity: 0;
+                
+                @media screen and (min-width: 768px){
+                    font-size: 4rem;
+                }
+            }
+
+            .app__contact-form {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+
+                input {
+                    width: 100%;
+                    border: 1px solid var(--lightgray-color);
+                    padding: 13px 10px;
+                    margin-bottom: 15px;
+                    outline: none;
+
+                }
+
+                input::placeholder {
+                    font-size: 1rem;
+                    color: #adadad;
+                }
+
+                textarea {
+                    width: 100%;
+                    resize: none;
+                    height: 200px;
+                    outline: none;
+                    margin-bottom: 30px;
+                    padding: 13px 10px;
+                    border: 1px solid var(--lightgray-color);
+                    font-family: var(--font-base);
+                    
+                }
+
+                textarea::placeholder {
+                    font-size: 1rem;
+                    color: #adadad;
+                    font-family: var(--font-base);
+                }
+
+                input[type=submit] {
+                    width: unset;
+                    background: transparent;
+                    display: inline;
+                    margin: 0;
+                    font-size: 1rem;
+                    border: 2px solid var(--white-color);
+                    border-radius: 30px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    color: var(--white-color);
+                }
+            }
+        }
+    }
+}
